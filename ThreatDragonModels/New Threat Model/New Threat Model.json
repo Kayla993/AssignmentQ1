@@ -148,8 +148,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "3289a09c-f1b5-403d-94d6-ee0fbcd2c70a",
             "zIndex": -1,
+            "id": "3289a09c-f1b5-403d-94d6-ee0fbcd2c70a",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -169,8 +169,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "08f8104a-cc1f-41d9-b84d-d07eb3572e8e",
             "zIndex": -1,
+            "id": "08f8104a-cc1f-41d9-b84d-d07eb3572e8e",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -190,8 +190,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "a6dc703b-8187-49fb-b865-9e4e6bb72a0a",
             "zIndex": -1,
+            "id": "a6dc703b-8187-49fb-b865-9e4e6bb72a0a",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -310,7 +310,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Admin Log in\nRequest \n(MFA is needed, and \nencrypted HTTPS connections)",
+              "name": "Admin Log in\nRequest \n(MFA is needed, RBAC and \nencrypted HTTPS connections)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -322,12 +322,12 @@
               "threats": []
             },
             "labels": [
-              "Admin Log in\nRequest \n(MFA is needed, and \nencrypted HTTPS connections)"
+              "Admin Log in\nRequest \n(MFA is needed, RBAC and \nencrypted HTTPS connections)"
             ],
             "id": "c200f7eb-1e4c-4001-a132-2515dd27a266",
             "source": {
-              "x": 265,
-              "y": 390
+              "x": 245,
+              "y": 370
             },
             "target": {
               "cell": "f5be6024-3ef2-44a9-bad0-14230868b84f",
@@ -335,12 +335,16 @@
             },
             "vertices": [
               {
+                "x": 340,
+                "y": 400
+              },
+              {
                 "x": 360,
-                "y": 420
+                "y": 450
               },
               {
                 "x": 390,
-                "y": 470
+                "y": 450
               }
             ]
           },
@@ -364,7 +368,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Customer actions",
+              "name": "Customer actions\n(rate limiting required)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -376,7 +380,7 @@
               "threats": []
             },
             "labels": [
-              "Customer actions"
+              "Customer actions\n(rate limiting required)"
             ],
             "id": "8d93035b-4f8a-4ea9-adbc-0f290e3727b8",
             "source": {
@@ -386,7 +390,8 @@
             "target": {
               "x": 790,
               "y": 80
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -462,7 +467,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "User Credentials\nValidated",
+              "name": "User Credentials\nValidated (MFA)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -474,7 +479,7 @@
               "threats": []
             },
             "labels": [
-              "User Credentials\nValidated"
+              "User Credentials\nValidated (MFA)"
             ],
             "id": "eb2bc0d2-1711-4ebc-8bb1-0ee5d8aa8708",
             "source": {
@@ -531,12 +536,12 @@
             },
             "vertices": [
               {
-                "x": 810,
-                "y": 390
+                "x": 850,
+                "y": 430
               },
               {
-                "x": 830,
-                "y": 405
+                "x": 870,
+                "y": 445
               }
             ]
           },
@@ -672,7 +677,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Admin Credentials\nValidated ",
+              "name": "Admin Credentials\nValidated (RBAC, enforce HTTPS, \nMFA)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -684,7 +689,7 @@
               "threats": []
             },
             "labels": [
-              "Admin Credentials\nValidated "
+              "Admin Credentials\nValidated (RBAC, enforce HTTPS, \nMFA)"
             ],
             "id": "ebb87635-d26d-46bf-917e-95f98cce427e",
             "source": {
@@ -795,6 +800,7 @@
               "token\n(session token\nHTTPS needed)"
             ],
             "id": "4e3b051e-232a-4503-9bfa-ddfb3639f45f",
+            "parent": "6962a033-42f9-42d2-8ad2-df74b24146fc",
             "source": {
               "cell": "6962a033-42f9-42d2-8ad2-df74b24146fc",
               "port": "f60fe5a0-19cc-434e-8e6b-8d523b080e09"
@@ -808,8 +814,7 @@
                 "x": 460,
                 "y": 330
               }
-            ],
-            "parent": "6962a033-42f9-42d2-8ad2-df74b24146fc"
+            ]
           },
           {
             "position": {
