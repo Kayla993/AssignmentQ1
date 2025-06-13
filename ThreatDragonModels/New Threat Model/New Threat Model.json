@@ -1059,7 +1059,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Application \nServer\n(payment requests\nsending money,\nlink cards\ncheck balance)"
+                "text": "Application \nServer\n(payment requests\nsending money,\nlink cards\ncheck balance)\n(info disclosure)"
               },
               "body": {
                 "stroke": "red",
@@ -1155,7 +1155,7 @@
             "id": "abbd2b89-74b0-4865-b4ef-a58650442613",
             "data": {
               "type": "tm.Process",
-              "name": "Application \nServer\n(payment requests\nsending money,\nlink cards\ncheck balance)",
+              "name": "Application \nServer\n(payment requests\nsending money,\nlink cards\ncheck balance)\n(info disclosure)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1265,7 +1265,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Admin\nDashboard"
+                "text": "Admin\nDashboard\n(elevation\nprivelege)"
               },
               "body": {
                 "stroke": "red",
@@ -1361,7 +1361,7 @@
             "id": "f5be6024-3ef2-44a9-bad0-14230868b84f",
             "data": {
               "type": "tm.Process",
-              "name": "Admin\nDashboard",
+              "name": "Admin\nDashboard\n(elevation\nprivelege)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1406,7 +1406,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Authentication\nService"
+                "text": "Authentication\nService \n(spoofing)"
               },
               "body": {
                 "stroke": "red",
@@ -1502,7 +1502,7 @@
             "id": "6962a033-42f9-42d2-8ad2-df74b24146fc",
             "data": {
               "type": "tm.Process",
-              "name": "Authentication\nService",
+              "name": "Authentication\nService \n(spoofing)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1673,7 +1673,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web\nApplication\n(log in details,\nregistration info,\ncard details,\ntransaction \nrequests)"
+                "text": "Web\nApplication\n(log in details,\nregistration info,\ncard details,\ntransaction \nrequests)\n(tampering)"
               },
               "body": {
                 "stroke": "red",
@@ -1769,7 +1769,7 @@
             "id": "119b0d31-4fff-4d72-a20a-1683a59457e3",
             "data": {
               "type": "tm.Process",
-              "name": "Web\nApplication\n(log in details,\nregistration info,\ncard details,\ntransaction \nrequests)",
+              "name": "Web\nApplication\n(log in details,\nregistration info,\ncard details,\ntransaction \nrequests)\n(tampering)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1814,7 +1814,7 @@
             },
             "attrs": {
               "text": {
-                "text": "API\nGateway"
+                "text": "API\nGateway \n(spoofing)"
               },
               "body": {
                 "stroke": "red",
@@ -1910,7 +1910,7 @@
             "id": "69e6909c-8db4-4c27-8ce7-103fc58a3a0b",
             "data": {
               "type": "tm.Process",
-              "name": "API\nGateway",
+              "name": "API\nGateway \n(spoofing)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
