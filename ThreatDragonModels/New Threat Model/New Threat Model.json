@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "5dc351d7-9855-4033-94cf-6583c634497d",
             "zIndex": -1,
+            "id": "5dc351d7-9855-4033-94cf-6583c634497d",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Internal Secure Zone",
@@ -59,8 +59,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "607f440c-2df1-4830-a72f-e79261c9e3f5",
             "zIndex": -1,
+            "id": "607f440c-2df1-4830-a72f-e79261c9e3f5",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Internal Secure Zone\n",
@@ -85,8 +85,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "e798eca3-95b1-4f56-8ecd-595d64b9c4a6",
             "zIndex": -1,
+            "id": "e798eca3-95b1-4f56-8ecd-595d64b9c4a6",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Internal Secure Zone",
@@ -106,8 +106,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "229326d7-78de-4f7f-9f33-45d3d8019957",
             "zIndex": -1,
+            "id": "229326d7-78de-4f7f-9f33-45d3d8019957",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -127,7 +127,70 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
+            "zIndex": -1,
             "id": "4c7351b9-cfb7-4cd0-b24d-d73178e3f517",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1074,
+              "y": 375
+            },
+            "size": {
+              "width": 128,
+              "height": 60
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "3289a09c-f1b5-403d-94d6-ee0fbcd2c70a",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1074,
+              "y": 215
+            },
+            "size": {
+              "width": 128,
+              "height": 60
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "08f8104a-cc1f-41d9-b84d-d07eb3572e8e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1074,
+              "y": 60
+            },
+            "size": {
+              "width": 128,
+              "height": 60
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "a6dc703b-8187-49fb-b865-9e4e6bb72a0a",
             "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
@@ -189,7 +252,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "User Log in\nRequest",
+              "name": "User Log in\nRequest (use strong passwords\nMFA needed)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -201,7 +264,7 @@
               "threats": []
             },
             "labels": [
-              "User Log in\nRequest"
+              "User Log in\nRequest (use strong passwords\nMFA needed)"
             ],
             "id": "f69a0092-3275-42e3-bb32-82e98df72fbb",
             "source": {
@@ -247,7 +310,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Admin Log in\nRequest",
+              "name": "Admin Log in\nRequest \n(MFA is needed, and \nencrypted HTTPS connections)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -259,62 +322,27 @@
               "threats": []
             },
             "labels": [
-              "Admin Log in\nRequest"
+              "Admin Log in\nRequest \n(MFA is needed, and \nencrypted HTTPS connections)"
             ],
             "id": "c200f7eb-1e4c-4001-a132-2515dd27a266",
             "source": {
               "x": 265,
-              "y": 380
+              "y": 390
             },
             "target": {
               "cell": "f5be6024-3ef2-44a9-bad0-14230868b84f",
               "port": "2460b7dd-0671-46af-a835-3782ff894f1a"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
+            },
+            "vertices": [
+              {
+                "x": 360,
+                "y": 420
+              },
+              {
+                "x": 390,
+                "y": 470
               }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "token",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "token"
-            ],
-            "id": "fa70c69a-b3af-419d-9c3e-1d911a507cbb",
-            "source": {
-              "cell": "6962a033-42f9-42d2-8ad2-df74b24146fc",
-              "port": "f60fe5a0-19cc-434e-8e6b-8d523b080e09"
-            },
-            "target": {
-              "cell": "f5be6024-3ef2-44a9-bad0-14230868b84f",
-              "port": "12fe195a-8933-4dc4-bce7-dbe9aed70653"
-            },
-            "vertices": []
+            ]
           },
           {
             "shape": "flow",
@@ -380,7 +408,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Transaction Initiated",
+              "name": "Transaction Initiated\n(input validation\nrequired)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -392,7 +420,7 @@
               "threats": []
             },
             "labels": [
-              "Transaction Initiated"
+              "Transaction Initiated\n(input validation\nrequired)"
             ],
             "id": "2a9553c8-b691-4f1f-a183-f08966a315d4",
             "source": {
@@ -478,7 +506,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "token",
+              "name": "Admin Monitor \nuser activity (monitor \nfor alerts, and secure \nbackup of credentials)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -490,61 +518,7 @@
               "threats": []
             },
             "labels": [
-              "token"
-            ],
-            "id": "4b7704e0-3a47-4c0b-a6a0-c8d2fd482329",
-            "source": {
-              "cell": "6962a033-42f9-42d2-8ad2-df74b24146fc",
-              "port": "f60fe5a0-19cc-434e-8e6b-8d523b080e09"
-            },
-            "target": {
-              "cell": "119b0d31-4fff-4d72-a20a-1683a59457e3",
-              "port": "2460b7dd-0671-46af-a835-3782ff894f1a"
-            },
-            "vertices": [
-              {
-                "x": 445,
-                "y": 270
-              },
-              {
-                "x": 410,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Admin Monitor \nuser activity",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Admin Monitor \nuser activity"
+              "Admin Monitor \nuser activity (monitor \nfor alerts, and secure \nbackup of credentials)"
             ],
             "id": "1e95008d-8b7c-404c-98b8-67b064a223ae",
             "source": {
@@ -559,6 +533,10 @@
               {
                 "x": 810,
                 "y": 390
+              },
+              {
+                "x": 830,
+                "y": 405
               }
             ]
           },
@@ -582,7 +560,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "User data \nupdated",
+              "name": "User data \nupdated\n(HTTPS needed)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -594,12 +572,12 @@
               "threats": []
             },
             "labels": [
-              "User data \nupdated"
+              "User data \nupdated\n(HTTPS needed)"
             ],
             "id": "3b2ec13d-7042-40cd-9e2c-b078569025a2",
             "source": {
-              "x": 940,
-              "y": 260
+              "x": 960,
+              "y": 270
             },
             "target": {
               "cell": "02460533-d1d5-442f-8d00-6e301af03643",
@@ -608,7 +586,15 @@
             "vertices": [
               {
                 "x": 1040,
-                "y": 190
+                "y": 180
+              },
+              {
+                "x": 1060,
+                "y": 200
+              },
+              {
+                "x": 1100,
+                "y": 150
               }
             ]
           },
@@ -632,7 +618,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Transactions Recorded",
+              "name": "Transactions Recorded\n(RBAC needed\nand encryption)",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -644,7 +630,7 @@
               "threats": []
             },
             "labels": [
-              "Transactions Recorded"
+              "Transactions Recorded\n(RBAC needed\nand encryption)"
             ],
             "id": "3146686e-5633-410a-aa04-703a34b9b6f5",
             "source": {
@@ -657,12 +643,12 @@
             },
             "vertices": [
               {
-                "x": 1030,
-                "y": 340
+                "x": 1050,
+                "y": 350
               },
               {
-                "x": 1030,
-                "y": 320
+                "x": 1050,
+                "y": 330
               }
             ]
           },
@@ -686,7 +672,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Admin Credentials\nValidated",
+              "name": "Admin Credentials\nValidated ",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -698,7 +684,7 @@
               "threats": []
             },
             "labels": [
-              "Admin Credentials\nValidated"
+              "Admin Credentials\nValidated "
             ],
             "id": "ebb87635-d26d-46bf-917e-95f98cce427e",
             "source": {
@@ -712,9 +698,118 @@
             "vertices": [
               {
                 "x": 640,
-                "y": 440
+                "y": 450
+              },
+              {
+                "x": 665,
+                "y": 420
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "token\n(use session tokens,\nand HTTPS needed)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "token\n(use session tokens,\nand HTTPS needed)"
+            ],
+            "id": "337ab420-66ce-44ec-86bd-8ce5a6f0ac7a",
+            "source": {
+              "cell": "6962a033-42f9-42d2-8ad2-df74b24146fc",
+              "port": "f60fe5a0-19cc-434e-8e6b-8d523b080e09"
+            },
+            "target": {
+              "cell": "119b0d31-4fff-4d72-a20a-1683a59457e3",
+              "port": "2460b7dd-0671-46af-a835-3782ff894f1a"
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 250
+              },
+              {
+                "x": 360,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "token\n(session token\nHTTPS needed)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "token\n(session token\nHTTPS needed)"
+            ],
+            "id": "4e3b051e-232a-4503-9bfa-ddfb3639f45f",
+            "source": {
+              "cell": "6962a033-42f9-42d2-8ad2-df74b24146fc",
+              "port": "f60fe5a0-19cc-434e-8e6b-8d523b080e09"
+            },
+            "target": {
+              "cell": "f5be6024-3ef2-44a9-bad0-14230868b84f",
+              "port": "12fe195a-8933-4dc4-bce7-dbe9aed70653"
+            },
+            "vertices": [
+              {
+                "x": 460,
+                "y": 330
+              }
+            ],
+            "parent": "6962a033-42f9-42d2-8ad2-df74b24146fc"
           },
           {
             "position": {
@@ -1157,7 +1252,7 @@
           {
             "position": {
               "x": 439,
-              "y": 360.0000000000004
+              "y": 360.0000000000003
             },
             "size": {
               "width": 120,
@@ -1434,7 +1529,10 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            }
+            },
+            "children": [
+              "4e3b051e-232a-4503-9bfa-ddfb3639f45f"
+            ]
           },
           {
             "position": {
@@ -1843,12 +1941,12 @@
           },
           {
             "position": {
-              "x": 1078,
-              "y": 215
+              "x": 1098,
+              "y": 220
             },
             "size": {
-              "width": 120,
-              "height": 60
+              "width": 80,
+              "height": 50
             },
             "attrs": {
               "text": {
@@ -1865,6 +1963,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 22,
             "ports": {
               "groups": {
                 "top": {
@@ -1948,7 +2047,6 @@
               ]
             },
             "id": "e934f205-0be4-42c2-b9e1-c09ab855f659",
-            "zIndex": 22,
             "data": {
               "type": "tm.Store",
               "name": "Transaction \nLogs",
@@ -1966,12 +2064,12 @@
           },
           {
             "position": {
-              "x": 1078,
-              "y": 59.99999999999997
+              "x": 1098,
+              "y": 65
             },
             "size": {
-              "width": 120,
-              "height": 60
+              "width": 80,
+              "height": 50
             },
             "attrs": {
               "text": {
@@ -1988,6 +2086,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 23,
             "ports": {
               "groups": {
                 "top": {
@@ -2071,7 +2170,6 @@
               ]
             },
             "id": "02460533-d1d5-442f-8d00-6e301af03643",
-            "zIndex": 23,
             "data": {
               "type": "tm.Store",
               "name": "User\nLogs",
